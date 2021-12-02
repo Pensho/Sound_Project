@@ -1,5 +1,10 @@
+import sys
+
+from UIManager import UIManager
 import PrintMSG
 
-msg = "Hello, World!"
+PrintMSG.PrintMSG("Major Python version: %d" % sys.version_info.major)
 
-PrintMSG.PrintMSG(msg)
+uiManager = UIManager("Sound SW")
+
+uiManager.start()
